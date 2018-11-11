@@ -10,7 +10,7 @@ Zainstaluj poniższe rzeczy, aby apka działała poprawnie
 
 ## Taski
 
-Task            | Description
+Task            | Opis
 -----           | -----------
 `start`         | Odpala aplikację w trybie developerskim
 `test`          | Odpala testy
