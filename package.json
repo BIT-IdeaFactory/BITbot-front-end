@@ -13,8 +13,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "style": "./node_modules/.bin/eslint src/*.js",
-    "prettier": "prettier --write '**/*.js'",
-    "check": "npm run prettier && npm run style"
+    "reformat": "prettier --write '**/*.js'",
+    "check": "npm run reformat && npm run style"
   },
   "husky": {
     "hooks": {
