@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import { Layout } from "antd";
+import { BackTop, Layout } from "antd";
 import PropTypes from "prop-types";
 
-import Logo from "../Logo";
+import Logo from "../Utils/Logo";
 import Menu from "./Menu";
 import TopMenu from "./TopMenu";
-import Trigger from "../Trigger";
+import Trigger from "../Utils/Trigger";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -58,6 +58,7 @@ class DashboardLayout extends Component {
               minHeight: 280
             }}
           >
+            <BackTop />
             {children}
           </Content>
           <Footer style={{ textAlign: "center" }}>
