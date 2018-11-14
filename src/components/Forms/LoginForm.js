@@ -10,6 +10,7 @@ class LoginForm extends Component {
     const { form } = this.props;
     form.validateFields((err, values) => {
       if (!err) {
+        // eslint-disable-next-line no-console
         console.log("Received values of form: ", values);
       }
     });
