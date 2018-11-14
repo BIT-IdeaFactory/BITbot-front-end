@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import { Form, Icon, Input, Button, Checkbox } from "antd";
 
 const FormItem = Form.Item;
@@ -6,7 +7,8 @@ const FormItem = Form.Item;
 class LoginForm extends Component {
   handleSubmit = e => {
     e.preventDefault();
-    this.props.form.validateFields((err, values) => {
+    const { form } = this.props;
+    form.validateFields((err, values) => {
       if (!err) {
         console.log("Received values of form: ", values);
       }
@@ -14,7 +16,8 @@ class LoginForm extends Component {
   };
 
   render() {
-    const { getFieldDecorator } = this.props.form;
+    const { form } = this.props;
+    const { getFieldDecorator } = form;
     return (
       <Form
         onSubmit={this.handleSubmit}
@@ -52,7 +55,7 @@ class LoginForm extends Component {
             valuePropName: "checked",
             initialValue: true
           })(<Checkbox>Zapamiętaj mnie</Checkbox>)}
-          <a className="login-form-forgot" href="">
+          <a className="login-form-forgot" href="/">
             Zapomnij hasło
           </a>
           <Button
@@ -68,6 +71,23 @@ class LoginForm extends Component {
   }
 }
 
+LoginForm.propTypes = {
+  form: PropTypes.shape({
+    getFieldDecorator: PropTypes.func,
+    password: PropTypes.string,
+    remember: PropTypes.bool,
+    userName: PropTypes.string
+  })
+};
+
+LoginForm.defaultProps = {
+  form: {
+    getFieldDecorator: "",
+    password: "",
+    remember: "",
+    userName: ""
+  }
+};
+
 const WrappedLoginForm = Form.create()(LoginForm);
 export default WrappedLoginForm;
-//ReactDOM.render(<WrappedLoginForm />, mountNode);
