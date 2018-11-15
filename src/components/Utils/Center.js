@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Center = styled.div`
-  height: 50vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
