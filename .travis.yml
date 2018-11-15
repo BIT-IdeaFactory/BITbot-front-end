@@ -1,0 +1,11 @@
+sudo: true
+language: node_js
+node_js:
+- 10.13.0
+branches:
+  only:
+    - master
+install:
+- npm install
+script:
+- npm run check
