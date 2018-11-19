@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "style": "./node_modules/.bin/eslint src/*.js",
+    "style": "./node_modules/.bin/eslint . --ext .js",
     "reformat": "prettier --write '**/*.js'",
     "check": "npm run reformat && npm run style"
   },
