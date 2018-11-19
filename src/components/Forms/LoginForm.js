@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 import { Button, Checkbox, Form, Icon, Input, Row } from "antd";
+import { NavLink } from "react-router-dom";
 
 const FormItem = Form.Item;
 
@@ -24,7 +26,7 @@ class LoginForm extends Component {
         onSubmit={this.handleSubmit}
         className="login-form"
         style={{
-          maxWidth: "300px",
+          maxWidth: "350px",
           padding: "30px",
           paddingBottom: 0,
           border: "1px solid lightgray",
@@ -57,9 +59,7 @@ class LoginForm extends Component {
             valuePropName: "checked",
             initialValue: true
           })(<Checkbox>Zapamiętaj mnie</Checkbox>)}
-          <a className="login-form-forgot" href="/">
-            Zapomnij hasło
-          </a>
+          <NavLink to="/forgot-password">Przypomnij hasło</NavLink>
           <Row
             type="flex"
             align="middle"
