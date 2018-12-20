@@ -1,5 +1,7 @@
 # bitbot-frontend
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BIT-IdeaFactory/BITbot-front-end.svg)](https://greenkeeper.io/)
+
 Frontend napisany w React'cie do projektu BitBot'a.
 
 ## Wymagania
