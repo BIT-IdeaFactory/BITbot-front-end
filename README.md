@@ -8,7 +8,7 @@ Frontend napisany w React'cie do projektu BitBot'a.
 
 Zainstaluj poniższe rzeczy, aby apka działała poprawnie
 
-* [Node.js](http://nodejs.org) wersja 10.13.0
+* [Node.js](http://nodejs.org) wersja 10.14.2
 
 ## Taski
 
