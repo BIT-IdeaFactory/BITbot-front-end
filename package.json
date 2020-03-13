@@ -21,7 +21,7 @@
     "dotenv": "6.0.0",
     "dotenv-expand": "5.0.0",
     "eslint": "5.9.0",
-    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "3.3.0",
     "eslint-config-react-app": "^3.0.5",
     "eslint-loader": "2.1.1",
